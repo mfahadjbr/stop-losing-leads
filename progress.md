@@ -106,3 +106,13 @@
 - Added compact scroll navbar; mobile shows logo and booking button with no hamburger.
 - Refined quiz link, team cards, timeline step three and animated footer. Homepage Business Lab is text only. Dedicated page uses supplied From Chaos to Clarity image.
 - Live latest-Shorts feed remains unconnected; supplied Shorts stay in place.
+
+
+## Latest pricing and form override completed
+The latest user request supersedes previous no-public-pricing rules. Home now places three equal pricing cards between Plan and What Changes with exact supplied copy, three visible [PRICE] placeholders, /book buttons and a Most complete label on Revenue Protection Pro. FAQ uses the new exact answer. Scope checks allow pricing only in Pricing and FAQ; fake reviews, unsupported numbers and guarantees stay prohibited.
+
+Company-logo.jpg was losslessly converted to public/assets/company-logo.png for favicon use. Three video-frame references were edited with the built-in image tool and installed as optimized WebP proof covers without changing their video destinations. Prompt provenance is in nov5-image-prompts.md.
+
+Navbar keeps its original height while narrowing on scroll. Removed the workspace image from Our Story. Business Lab now includes the shared photographic final CTA and refined React icons. Contact has only Full Name, Phone Number, Email Address, Business Name and Message with placeholders. Only phone and email are required; no SMS fields remain. Contact delivery is still an email draft.
+
+Validation: updated six-route acceptance passed, exact pricing and FAQ text and placement passed, TypeScript passed, equal desktop cards and stacked mobile cards verified. Navbar measured 76px in both desktop states. Mobile checks on all six routes found no overflow or broken images.

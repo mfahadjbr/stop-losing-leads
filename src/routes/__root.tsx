@@ -8,7 +8,7 @@ import '@fontsource/plus-jakarta-sans/600.css'
 import '@fontsource/plus-jakarta-sans/700.css'
 import '../styles.css'
 import '../theme-v2.css'
-export const Route=createRootRoute({head:()=>({meta:[{charSet:'utf-8'},{name:'viewport',content:'width=device-width, initial-scale=1'},{title:'Stop Losing Leads HQ | Make every lead count'},{name:'description',content:'We build and run your follow up system. Find your lead leak with the team at Stop Losing Leads HQ.'}]}),component:()=> <html lang="en"><head><HeadContent/></head><body><Shell><Outlet/></Shell><Scripts/></body></html>,notFoundComponent:()=> <section className="section"><h1>That page slipped away.</h1><a href="/">Back to home →</a></section>})
+export const Route=createRootRoute({head:()=>({links:[{rel:"icon",type:"image/png",href:"/assets/company-logo.png"},{rel:"apple-touch-icon",href:"/assets/company-logo.png"}],meta:[{charSet:'utf-8'},{name:'viewport',content:'width=device-width, initial-scale=1'},{title:'Stop Losing Leads HQ | Make every lead count'},{name:'description',content:'We build and run your follow up system. Find your lead leak with the team at Stop Losing Leads HQ.'}]}),component:()=> <html lang="en"><head><HeadContent/></head><body><Shell><Outlet/></Shell><Scripts/></body></html>,notFoundComponent:()=> <section className="section"><h1>That page slipped away.</h1><a href="/">Back to home →</a></section>})
 import '../theme-v3.css'
 import '../brief-layout.css'
 
@@ -17,3 +17,5 @@ import '../team-image.css'
 import '../nov5.css'
 
 import '../refinements.css'
+
+import '../pricing-update.css'

@@ -51,5 +51,5 @@ export const brief = {
       "You leave with a clear picture of where leads slip away and if it makes sense the system that fits."
     ]
   },
-  "pricingAnswer": "Every business leaks in a different place so we don't guess. On your diagnostic we'll show you what it would take to close your leak what it costs and whether you need us at all."
+  "pricingAnswer": "Plans are shown above. Every business leaks in a different place, so on your diagnostic we'll show you which plan closes your leak, and whether you need us at all."
 } as const

@@ -19,3 +19,10 @@ Mode: built-in image tool edit.
 Reference: public/assets/owners-group-edited-v1.png
 Output: public/assets/owners-cta-background-v2.png
 Prompt: Preserve the three adult owners and their recognizable appearance. Place the group on the right of a contemporary business studio in deep navy and muted teal. Man center slightly forward with women at sides. Quiet dark space on the left for readable website text. Premium natural photography. No text or logos.
+
+
+## Three proof video covers
+Mode: built-in image tool edit, one call per cover.
+References: proof-reference-1.jpg (kD6Mu7V0eqU), proof-reference-2.jpg (2GJiK9GdjEQ), proof-reference-3.jpg (OqyIwlXkEpQ). Downloaded from the matching YouTube video thumbnails.
+Project outputs: public/assets/proof-thumbnail-1-v1.webp, proof-thumbnail-2-v1.webp, proof-thumbnail-3-v1.webp. Converted to WebP for delivery.
+Prompt per image: Edit the actual video frame into a polished landscape 16:9 website video thumbnail for Stop Losing Leads HQ. Preserve exactly the visible people, recognizable faces, ages and natural expressions. Do not add people. Remove black letterboxing and subtitles. Improve clarity and exposure modestly without plastic skin. Clean editorial video call composition with subtle navy and teal edge framing. Retain the source conversation context. No text, logos, quotes, play button, star ratings or testimonial claims.

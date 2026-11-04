@@ -17,3 +17,13 @@
 
 Latest requested UI refinements completed November 5.
 Pending integrations: live calendar availability and email confirmation; automatic approved Shorts feed. Client names and business details for supplied proof videos have not been inferred.
+
+
+Latest override completed:
+- [x] Three public Home pricing cards with literal [PRICE] placeholders and exact supplied copy
+- [x] Revised FAQ and scoped acceptance checks
+- [x] Company logo PNG favicon
+- [x] Three generated proof video covers connected to original videos
+- [x] Navbar narrows on scroll with unchanged height
+- [x] Remove Story workspace image and add Business Lab final CTA
+- [x] Five Contact fields with placeholders and redesigned contact details
