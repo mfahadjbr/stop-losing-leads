@@ -116,3 +116,7 @@ Company-logo.jpg was losslessly converted to public/assets/company-logo.png for 
 Navbar keeps its original height while narrowing on scroll. Removed the workspace image from Our Story. Business Lab now includes the shared photographic final CTA and refined React icons. Contact has only Full Name, Phone Number, Email Address, Business Name and Message with placeholders. Only phone and email are required; no SMS fields remain. Contact delivery is still an email draft.
 
 Validation: updated six-route acceptance passed, exact pricing and FAQ text and placement passed, TypeScript passed, equal desktop cards and stacked mobile cards verified. Navbar measured 76px in both desktop states. Mobile checks on all six routes found no overflow or broken images.
+
+
+## Confirmed shared monthly range and restored hero line
+Client confirmed only a shared $675 to $1,160 monthly range. Added one centered monthly range in Pricing and removed all three [PRICE] card placeholders. No amount assigned to any individual plan. Restored You do the work. We handle the follow up. on the right of the desktop hero assurance row and on its own centered row on mobile. Added a framed diagonal quiz arrow with hover and keyboard focus styles. Updated acceptance checks to allow only the confirmed range. Desktop and 390px browser verification found no horizontal overflow or assurance overlap.

@@ -29,7 +29,7 @@ export function Hero() {
       y: 0
     }} transition={{
       duration: .8
-    }}><span className="eyebrow"><span /> FOLLOW UP FOR SERVICE BUSINESSES</span><h1>You already paid<br />for the lead.<br /><em>Let's make sure<br />somebody answers it.</em></h1><p>{brief.hero.body}</p><Action /><a className="quiz-link" href="/quiz">{brief.hero.quiz} <FiArrowRight /></a></motion.div><div className="hero-photo-slot"><TeamImage priority /></div><div className="hero-assurance"><div><FiCheck /><span>Built for you</span></div><div><FiCheck /><span>Run by us</span></div><div><FiCheck /><span>Owned by you</span></div></div></section>;
+    }}><span className="eyebrow"><span /> FOLLOW UP FOR SERVICE BUSINESSES</span><h1>You already paid<br />for the lead.<br /><em>Let's make sure<br />somebody answers it.</em></h1><p>{brief.hero.body}</p><Action /><a className="quiz-link" href="/quiz"><span>{brief.hero.quiz}</span><span className="quiz-link-arrow" aria-hidden="true"><FiArrowUpRight /></span></a></motion.div><div className="hero-photo-slot"><TeamImage priority /></div><div className="hero-assurance"><div><FiCheck /><span>Built for you</span></div><div><FiCheck /><span>Run by us</span></div><div><FiCheck /><span>Owned by you</span></div><p className="hero-closing-line">You do the work. We handle the follow up.</p></div></section>;
 }
 const steps = brief.steps.map((step, i) => ({
   ...step,

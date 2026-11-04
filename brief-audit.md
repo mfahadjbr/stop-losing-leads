@@ -13,3 +13,5 @@ Navbar preserves height and narrows on scroll. Story workspace image removed. Bu
 Verified: six-route acceptance, exact pricing copy/order and FAQ, five Contact fields, favicon references, desktop equal cards, mobile stacking and no overflow/broken images on six routes.
 
 Pending external integrations: live booking and confirmation email, direct form delivery and automatic latest-approved-Shorts feed.
+
+Latest confirmed override: one shared $675 to $1,160 monthly range replaces card price placeholders. Hero closing line restored and quiz arrow restyled.

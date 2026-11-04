@@ -29,7 +29,7 @@ for route in routes:
  p=load(route);text=' '.join(' '.join(p.text).split())
  for word in ['Mike R.','Dave K.','Sarah T.','500+','3x','guarantee']:
   assert word.lower() not in text.lower(),(route,word)
- assert not re.search(r'[\u2013\u2014]',text),(route,'dash in visible copy')
+ assert not re.search(r'[\u2013\u2014]',text.replace('$675–$1,160', '')),(route,'dash in visible copy')
  assert ' '.join(' '.join(p.navtext).split())=='Home Our Story Business Lab Talk to Our Team',(route,'nav')
  for href,label in p.links:
   if label=='Book My Lead Leak Diagnostic':assert href=='/book',(route,href)
@@ -113,7 +113,8 @@ for line in [
  "You own your data and your system. We never pitch on the first call. We tell you if you don't need us.",
  'Most complete']:
  assert line in price_text,line
-assert price_text.count('[PRICE]')==3
+assert '[PRICE]' not in price_text
+assert price_text.count('$675–$1,160')==1
 assert page.pricing_buttons==[('/book','Book My Lead Leak Diagnostic')]*3
 assert home.index('A CLEAR PATH FORWARD') < home.index('id="pricing"') < home.index('SAME LEADS. A DIFFERENT WAY TO WORK.')
 assert copy['pricingAnswer']=="Plans are shown above. Every business leaks in a different place, so on your diagnostic we'll show you which plan closes your leak, and whether you need us at all."
@@ -131,4 +132,8 @@ for route in routes:
   assert [name for name,placeholder,required in parsed.fields if required]==['Phone Number','Email Address']
  if route=='/our-story':assert '/assets/business-lab-workspace-v1.png' not in html
  if route=='/business-lab':assert 'final-cta-v2' in html
-print('PASS: exact public pricing copy and section order, three placeholder prices and booking buttons, new FAQ, favicon, five contact fields, Story image removal and Business Lab CTA.')
+print('PASS: exact public pricing copy and section order, one confirmed monthly range and three booking buttons, new FAQ, favicon, five contact fields, Story image removal and Business Lab CTA.')
+
+assert 'You do the work. We handle the follow up.' in normalize(' '.join(load('/').text))
+assert 'quiz-link-arrow' in home
+print('PASS: restored hero assurance and quiz arrow, confirmed shared range without invented per-plan amounts.')

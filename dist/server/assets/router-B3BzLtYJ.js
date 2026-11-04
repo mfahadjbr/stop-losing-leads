@@ -54,7 +54,11 @@ function Pricing() {
 						id: "pricing-title",
 						children: "Simple plans. Pick the one that closes your leak."
 					}),
-					/* @__PURE__ */ jsx("p", { children: "Every business leaks in a different place. Here is how we fix each one. Not sure which fits? Book a diagnostic and we'll tell you honestly." })
+					/* @__PURE__ */ jsx("p", { children: "Every business leaks in a different place. Here is how we fix each one. Not sure which fits? Book a diagnostic and we'll tell you honestly." }),
+					/* @__PURE__ */ jsxs("div", {
+						className: "pricing-range",
+						children: [/* @__PURE__ */ jsx("strong", { children: "$675–$1,160" }), /* @__PURE__ */ jsx("span", { children: "per month" })]
+					})
 				]
 			}),
 			/* @__PURE__ */ jsx("div", {
@@ -85,20 +89,13 @@ function Pricing() {
 							children: plan.who
 						}),
 						/* @__PURE__ */ jsx("ul", { children: plan.features.map((feature) => /* @__PURE__ */ jsxs("li", { children: [/* @__PURE__ */ jsx(FiCheck, { "aria-hidden": "true" }), /* @__PURE__ */ jsx("span", { children: feature })] }, feature)) }),
-						/* @__PURE__ */ jsxs("div", {
+						/* @__PURE__ */ jsx("div", {
 							className: "plan-bottom",
-							children: [/* @__PURE__ */ jsxs("p", {
-								className: "plan-price",
-								children: [
-									/* @__PURE__ */ jsx("strong", { children: "[PRICE]" }),
-									" ",
-									/* @__PURE__ */ jsx("span", { children: "per month" })
-								]
-							}), /* @__PURE__ */ jsxs("a", {
+							children: /* @__PURE__ */ jsxs("a", {
 								className: "button",
 								href: "/book",
 								children: ["Book My Lead Leak Diagnostic ", /* @__PURE__ */ jsx(FiArrowUpRight, { "aria-hidden": "true" })]
-							})]
+							})
 						})
 					]
 				}, plan.name))
@@ -228,11 +225,11 @@ function Hero() {
 					/* @__PURE__ */ jsxs("a", {
 						className: "quiz-link",
 						href: "/quiz",
-						children: [
-							brief.hero.quiz,
-							" ",
-							/* @__PURE__ */ jsx(FiArrowRight, {})
-						]
+						children: [/* @__PURE__ */ jsx("span", { children: brief.hero.quiz }), /* @__PURE__ */ jsx("span", {
+							className: "quiz-link-arrow",
+							"aria-hidden": "true",
+							children: /* @__PURE__ */ jsx(FiArrowUpRight, {})
+						})]
 					})
 				]
 			}),
@@ -245,7 +242,11 @@ function Hero() {
 				children: [
 					/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx(FiCheck, {}), /* @__PURE__ */ jsx("span", { children: "Built for you" })] }),
 					/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx(FiCheck, {}), /* @__PURE__ */ jsx("span", { children: "Run by us" })] }),
-					/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx(FiCheck, {}), /* @__PURE__ */ jsx("span", { children: "Owned by you" })] })
+					/* @__PURE__ */ jsxs("div", { children: [/* @__PURE__ */ jsx(FiCheck, {}), /* @__PURE__ */ jsx("span", { children: "Owned by you" })] }),
+					/* @__PURE__ */ jsx("p", {
+						className: "hero-closing-line",
+						children: "You do the work. We handle the follow up."
+					})
 				]
 			})
 		]
@@ -1552,22 +1553,22 @@ var Route$6 = createRootRoute({
 	})
 });
 // src/routes/index.tsx
-var $$splitComponentImporter$5 = () => import("./routes-505Wnt8r.js");
+var $$splitComponentImporter$5 = () => import("./routes-7_UFuM77.js");
 var Route$5 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
 // src/routes/book.tsx
 var $$splitComponentImporter$4 = () => import("./book-Bp9rzVXC.js");
 var Route$4 = createFileRoute("/book")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
 // src/routes/business-lab.tsx
-var $$splitComponentImporter$3 = () => import("./business-lab-GAaHgrQd.js");
+var $$splitComponentImporter$3 = () => import("./business-lab-D7aHJdvn.js");
 var Route$3 = createFileRoute("/business-lab")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
 // src/routes/contact.tsx
-var $$splitComponentImporter$2 = () => import("./contact-B6ag1JSW.js");
+var $$splitComponentImporter$2 = () => import("./contact-DcAHQw3O.js");
 var Route$2 = createFileRoute("/contact")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
 // src/routes/our-story.tsx
-var $$splitComponentImporter$1 = () => import("./our-story-CmghhfFS.js");
+var $$splitComponentImporter$1 = () => import("./our-story-CoRtWW7B.js");
 var Route$1 = createFileRoute("/our-story")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
 // src/routes/quiz.tsx
-var $$splitComponentImporter = () => import("./quiz-BGehm3Eb.js");
+var $$splitComponentImporter = () => import("./quiz-BiAh7t1U.js");
 var Route = createFileRoute("/quiz")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 // src/routeTree.gen.ts
 var rootRouteChildren = {

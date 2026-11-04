@@ -27,3 +27,5 @@ Latest override completed:
 - [x] Navbar narrows on scroll with unchanged height
 - [x] Remove Story workspace image and add Business Lab final CTA
 - [x] Five Contact fields with placeholders and redesigned contact details
+
+Latest confirmed override: one shared $675 to $1,160 monthly range replaces card price placeholders. Hero closing line restored and quiz arrow restyled.
