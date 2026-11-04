@@ -11,12 +11,12 @@ export function Pricing() {
   const reduced = useReducedMotion();
   return <section id="pricing" className="section pricing" aria-labelledby="pricing-title">
     <div className="pricing-heading"><span className="eyebrow">A PLAN FOR YOUR LEAK</span><h2 id="pricing-title">Simple plans. Pick the one that closes your leak.</h2><p>Every business leaks in a different place. Here is how we fix each one. Not sure which fits? Book a diagnostic and we'll tell you honestly.</p><div className="pricing-range"><strong>$675–$1,160</strong><span>per month</span></div></div>
-    <div className="pricing-grid">{plans.map((plan, i) => <motion.article key={plan.name} className={'pricing-card' + (i === 2 ? ' most-complete' : '')} initial={{ y: reduced ? 0 : 18 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: reduced ? 0 : i * .08 }}>
+    <div className="pricing-grid">{plans.map((plan, i) => <div key={plan.name} className={'pricing-position pricing-position-' + i}><motion.article className={'pricing-card' + (i === 2 ? ' most-complete' : '')} initial={{ y: reduced ? 0 : 18 }} whileInView={{ y: 0 }} viewport={{ once: true }} transition={{ duration: .5, delay: reduced ? 0 : i * .08 }}>
       <div className="plan-top"><span className="plan-icon"><plan.icon aria-hidden="true" /></span>{i === 2 && <span className="plan-badge">Most complete</span>}</div>
       <h3>{plan.name}</h3><p className="plan-who">{plan.who}</p>
       <ul>{plan.features.map(feature => <li key={feature}><FiCheck aria-hidden="true"/><span>{feature}</span></li>)}</ul>
       <div className="plan-bottom"><a className="button" href="/book">Book My Lead Leak Diagnostic <FiArrowUpRight aria-hidden="true"/></a></div>
-    </motion.article>)}</div>
+    </motion.article></div>)}</div>
     <p className="pricing-assurance">You own your data and your system. We never pitch on the first call. We tell you if you don't need us.</p>
   </section>;
 }

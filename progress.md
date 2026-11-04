@@ -120,3 +120,8 @@ Validation: updated six-route acceptance passed, exact pricing and FAQ text and 
 
 ## Confirmed shared monthly range and restored hero line
 Client confirmed only a shared $675 to $1,160 monthly range. Added one centered monthly range in Pricing and removed all three [PRICE] card placeholders. No amount assigned to any individual plan. Restored You do the work. We handle the follow up. on the right of the desktop hero assurance row and on its own centered row on mobile. Added a framed diagonal quiz arrow with hover and keyboard focus styles. Updated acceptance checks to allow only the confirmed range. Desktop and 390px browser verification found no horizontal overflow or assurance overlap.
+
+
+## Layered pricing card refinement
+Revenue Accelerator is raised and scaled at the center with a higher stacking layer. Side plans tilt slightly behind it at desktop widths. Tablet uses less movement and phones use a straight single column. Added subtle hover/focus shine and glow to cards and polished the shared monthly range badge. Reduced motion disables shine transitions. Existing plan copy, shared range and /book links remain unchanged.
+Verified TypeScript, production build and acceptance checks. Browser verified the center stacking depth at 1440px, clean stacked cards at 390px and no overflow at 820px. Final preview: preview-layered-pricing.png.

@@ -63,41 +63,44 @@ function Pricing() {
 			}),
 			/* @__PURE__ */ jsx("div", {
 				className: "pricing-grid",
-				children: plans.map((plan, i) => /* @__PURE__ */ jsxs(motion.article, {
-					className: "pricing-card" + (i === 2 ? " most-complete" : ""),
-					initial: { y: reduced ? 0 : 18 },
-					whileInView: { y: 0 },
-					viewport: { once: true },
-					transition: {
-						duration: .5,
-						delay: reduced ? 0 : i * .08
-					},
-					children: [
-						/* @__PURE__ */ jsxs("div", {
-							className: "plan-top",
-							children: [/* @__PURE__ */ jsx("span", {
-								className: "plan-icon",
-								children: /* @__PURE__ */ jsx(plan.icon, { "aria-hidden": "true" })
-							}), i === 2 && /* @__PURE__ */ jsx("span", {
-								className: "plan-badge",
-								children: "Most complete"
-							})]
-						}),
-						/* @__PURE__ */ jsx("h3", { children: plan.name }),
-						/* @__PURE__ */ jsx("p", {
-							className: "plan-who",
-							children: plan.who
-						}),
-						/* @__PURE__ */ jsx("ul", { children: plan.features.map((feature) => /* @__PURE__ */ jsxs("li", { children: [/* @__PURE__ */ jsx(FiCheck, { "aria-hidden": "true" }), /* @__PURE__ */ jsx("span", { children: feature })] }, feature)) }),
-						/* @__PURE__ */ jsx("div", {
-							className: "plan-bottom",
-							children: /* @__PURE__ */ jsxs("a", {
-								className: "button",
-								href: "/book",
-								children: ["Book My Lead Leak Diagnostic ", /* @__PURE__ */ jsx(FiArrowUpRight, { "aria-hidden": "true" })]
+				children: plans.map((plan, i) => /* @__PURE__ */ jsx("div", {
+					className: "pricing-position pricing-position-" + i,
+					children: /* @__PURE__ */ jsxs(motion.article, {
+						className: "pricing-card" + (i === 2 ? " most-complete" : ""),
+						initial: { y: reduced ? 0 : 18 },
+						whileInView: { y: 0 },
+						viewport: { once: true },
+						transition: {
+							duration: .5,
+							delay: reduced ? 0 : i * .08
+						},
+						children: [
+							/* @__PURE__ */ jsxs("div", {
+								className: "plan-top",
+								children: [/* @__PURE__ */ jsx("span", {
+									className: "plan-icon",
+									children: /* @__PURE__ */ jsx(plan.icon, { "aria-hidden": "true" })
+								}), i === 2 && /* @__PURE__ */ jsx("span", {
+									className: "plan-badge",
+									children: "Most complete"
+								})]
+							}),
+							/* @__PURE__ */ jsx("h3", { children: plan.name }),
+							/* @__PURE__ */ jsx("p", {
+								className: "plan-who",
+								children: plan.who
+							}),
+							/* @__PURE__ */ jsx("ul", { children: plan.features.map((feature) => /* @__PURE__ */ jsxs("li", { children: [/* @__PURE__ */ jsx(FiCheck, { "aria-hidden": "true" }), /* @__PURE__ */ jsx("span", { children: feature })] }, feature)) }),
+							/* @__PURE__ */ jsx("div", {
+								className: "plan-bottom",
+								children: /* @__PURE__ */ jsxs("a", {
+									className: "button",
+									href: "/book",
+									children: ["Book My Lead Leak Diagnostic ", /* @__PURE__ */ jsx(FiArrowUpRight, { "aria-hidden": "true" })]
+								})
 							})
-						})
-					]
+						]
+					})
 				}, plan.name))
 			}),
 			/* @__PURE__ */ jsx("p", {
@@ -1553,22 +1556,22 @@ var Route$6 = createRootRoute({
 	})
 });
 // src/routes/index.tsx
-var $$splitComponentImporter$5 = () => import("./routes-7_UFuM77.js");
+var $$splitComponentImporter$5 = () => import("./routes-DuKtTKDc.js");
 var Route$5 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
 // src/routes/book.tsx
 var $$splitComponentImporter$4 = () => import("./book-Bp9rzVXC.js");
 var Route$4 = createFileRoute("/book")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
 // src/routes/business-lab.tsx
-var $$splitComponentImporter$3 = () => import("./business-lab-D7aHJdvn.js");
+var $$splitComponentImporter$3 = () => import("./business-lab-BLjECuWa.js");
 var Route$3 = createFileRoute("/business-lab")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
 // src/routes/contact.tsx
-var $$splitComponentImporter$2 = () => import("./contact-DcAHQw3O.js");
+var $$splitComponentImporter$2 = () => import("./contact-B6M9Kwa9.js");
 var Route$2 = createFileRoute("/contact")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
 // src/routes/our-story.tsx
-var $$splitComponentImporter$1 = () => import("./our-story-CoRtWW7B.js");
+var $$splitComponentImporter$1 = () => import("./our-story-BfVU7D00.js");
 var Route$1 = createFileRoute("/our-story")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
 // src/routes/quiz.tsx
-var $$splitComponentImporter = () => import("./quiz-BiAh7t1U.js");
+var $$splitComponentImporter = () => import("./quiz-szlMkvHR.js");
 var Route = createFileRoute("/quiz")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
 // src/routeTree.gen.ts
 var rootRouteChildren = {
