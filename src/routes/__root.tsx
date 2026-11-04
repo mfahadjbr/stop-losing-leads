@@ -1,0 +1,12 @@
+import {createRootRoute,HeadContent,Scripts,Outlet} from '@tanstack/react-router'
+import {Shell} from '../site'
+import '@fontsource/nunito-sans/400.css'
+import '@fontsource/nunito-sans/600.css'
+import '@fontsource/nunito-sans/700.css'
+import '@fontsource/plus-jakarta-sans/500.css'
+import '@fontsource/plus-jakarta-sans/600.css'
+import '@fontsource/plus-jakarta-sans/700.css'
+import '../styles.css'
+import '../theme-v2.css'
+export const Route=createRootRoute({head:()=>({meta:[{charSet:'utf-8'},{name:'viewport',content:'width=device-width, initial-scale=1'},{title:'Stop Losing Leads HQ | Make every lead count'},{name:'description',content:'We build and run your follow up system. Find your lead leak with the team at Stop Losing Leads HQ.'}]}),component:()=> <html lang="en"><head><HeadContent/></head><body><Shell><Outlet/></Shell><Scripts/></body></html>,notFoundComponent:()=> <section className="section"><h1>That page slipped away.</h1><a href="/">Back to home →</a></section>})
+import '../theme-v3.css'
