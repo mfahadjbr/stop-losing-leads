@@ -1,11 +1,76 @@
-import {useEffect,useRef,useState} from 'react'
-import {motion,useReducedMotion} from 'framer-motion'
-import {FiArrowLeft,FiArrowRight,FiArrowUpRight,FiPlay,FiPause,FiX} from 'react-icons/fi'
-const ids=['Y81b-ZFxWoY','k_0uYRxxKpA','IH9EbIdV3bc','zRh2hzJaARs','tJ9m_3EVOoc','wMO_tKKo-mo','BqQmhQK8EG0']
-export function Videos(){
- const reduced=useReducedMotion();const [index,setIndex]=useState(0),[playing,setPlaying]=useState<string|null>(null),[paused,setPaused]=useState(false),[hovered,setHovered]=useState(false),[focused,setFocused]=useState(false),[visible,setVisible]=useState(false);const section=useRef<HTMLElement>(null),trigger=useRef<HTMLElement|null>(null)
- useEffect(()=>{const observer=new IntersectionObserver(([entry])=>setVisible(entry.isIntersecting),{threshold:.2});if(section.current)observer.observe(section.current);return ()=>observer.disconnect()},[])
- useEffect(()=>{if(paused||hovered||focused||playing||reduced||!visible)return;const timer=setInterval(()=>{if(!document.hidden)setIndex(i=>(i+1)%ids.length)},5000);return ()=>clearInterval(timer)},[paused,hovered,focused,playing,reduced,visible])
- useEffect(()=>{if(!playing)return;const priorOverflow=document.body.style.overflow;document.body.style.overflow='hidden';const onKey=(e:KeyboardEvent)=>{if(e.key==='Escape')setPlaying(null);if(e.key==='Tab'){const controls=[...document.querySelectorAll<HTMLElement>('.video-dialog button,.video-dialog iframe,.video-dialog a')];const first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}}};document.addEventListener('keydown',onKey);return ()=>{document.body.style.overflow=priorOverflow;document.removeEventListener('keydown',onKey);trigger.current?.focus()}},[playing])
- return <section className="videos section videos-v3" ref={section}><div className="section-heading"><div><span className="eyebrow">INSIDE THE BUSINESS LAB</span><h2>Mic drop moments.<br/><em>From The Business Lab.</em></h2></div><p>Real owners talking through the work.<br/>Watch a moment from our sessions.</p></div><div className="gallery-stage" onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={()=>setFocused(true)} onBlurCapture={e=>{if(!e.currentTarget.contains(e.relatedTarget as Node))setFocused(false)}} aria-roledescription="carousel" aria-label="Business Lab videos" onKeyDown={e=>{if(e.key==='ArrowRight')setIndex(i=>(i+1)%7);if(e.key==='ArrowLeft')setIndex(i=>(i+6)%7)}}>{[-1,0,1].map(offset=>{const n=(index+offset+7)%7,id=ids[n];return <motion.button key={offset} className={'video-card position'+offset} aria-label={offset?'Show video '+(n+1):'Play Business Lab video '+(n+1)} onClick={e=>{if(offset)setIndex(n);else{trigger.current=e.currentTarget;setPlaying(id)}}} animate={{rotate:offset*3,scale:offset?.88:1,y:offset?15:-18}} transition={{duration:reduced?0:.65,ease:[.22,1,.36,1]}}><img key={id} src={'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'} alt={'Business Lab video '+(n+1)} loading="lazy"/><div className="video-overlay"/><span className="video-kicker">▶ THE BUSINESS LAB</span><span className="play"><FiPlay/></span><div className="video-label"><small>REAL OWNERS. REAL CONVERSATIONS.</small><b>Inside The Business Lab</b><span>Watch the moment <FiArrowUpRight/></span></div></motion.button>})}</div><div className="carousel-controls"><button aria-label="Previous video" onClick={()=>setIndex(i=>(i+6)%7)}><FiArrowLeft/></button>{!reduced&&<button className="autoplay-toggle" aria-label={paused?'Resume automatic videos':'Pause automatic videos'} aria-pressed={paused} onClick={()=>setPaused(!paused)}>{paused?<FiPlay/>:<FiPause/>}</button>}<button aria-label="Next video" onClick={()=>setIndex(i=>(i+1)%7)}><FiArrowRight/></button></div><a className="button youtube-cta" href="https://www.youtube.com/@stoplosingleadshq">Watch more & subscribe on YouTube <span className="button-arrow"><FiArrowUpRight/></span></a>{playing&&<div className="modal video-dialog" role="dialog" aria-modal="true" aria-label="Business Lab video" onClick={()=>setPlaying(null)}><button autoFocus className="close" aria-label="Close video" onClick={()=>setPlaying(null)}><FiX/></button><iframe src={'https://www.youtube-nocookie.com/embed/'+playing+'?autoplay=1'} title="Business Lab video" allow="autoplay; encrypted-media; fullscreen" allowFullScreen onClick={e=>e.stopPropagation()}/><a href={'https://www.youtube.com/shorts/'+playing}>Watch on YouTube ↗</a></div>}</section>
+import { useEffect, useRef, useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
+import { FiArrowLeft, FiArrowRight, FiArrowUpRight, FiPlay, FiX } from 'react-icons/fi';
+const ids = ['Y81b-ZFxWoY', 'k_0uYRxxKpA', 'IH9EbIdV3bc', 'zRh2hzJaARs', 'tJ9m_3EVOoc', 'wMO_tKKo-mo', 'BqQmhQK8EG0'];
+export function Videos() {
+  const reduced = useReducedMotion();
+  const [index, setIndex] = useState(0),
+    [playing, setPlaying] = useState<string | null>(null),
+    [hovered, setHovered] = useState(false),
+    [focused, setFocused] = useState(false),
+    [visible, setVisible] = useState(false);
+  const section = useRef<HTMLElement>(null),
+    trigger = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), {
+      threshold: .2
+    });
+    if (section.current) observer.observe(section.current);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    if (hovered || focused || playing || reduced || !visible) return;
+    const timer = setInterval(() => {
+      if (!document.hidden) setIndex(i => (i + 1) % ids.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [hovered, focused, playing, reduced, visible]);
+  useEffect(() => {
+    if (!playing) return;
+    const priorOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPlaying(null);
+      if (e.key === 'Tab') {
+        const controls = [...document.querySelectorAll<HTMLElement>(".video-dialog button, .video-dialog iframe, .video-dialog a")];
+        const first = controls[0],
+          last = controls.at(-1);
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last?.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first?.focus();
+        }
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = priorOverflow;
+      document.removeEventListener('keydown', onKey);
+      trigger.current?.focus();
+    };
+  }, [playing]);
+  return <section className="videos section videos-v3" ref={section}><div className="section-heading"><div><span className="eyebrow">INSIDE THE BUSINESS LAB</span><h2>Mic drop moments<br /><em>from The Business Lab.</em></h2></div><p>Real owners real conversations. Watch the moments that happen inside our sessions.</p></div><div className="gallery-stage" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} onFocusCapture={() => setFocused(true)} onBlurCapture={e => {
+      if (!e.currentTarget.contains(e.relatedTarget as Node)) setFocused(false);
+    }} aria-roledescription="carousel" aria-label="Business Lab videos" onKeyDown={e => {
+      if (e.key === 'ArrowRight') setIndex(i => (i + 1) % 7);
+      if (e.key === 'ArrowLeft') setIndex(i => (i + 6) % 7);
+    }}>{[-1, 0, 1].map(offset => {
+        const n = (index + offset + 7) % 7,
+          id = ids[n];
+        return <motion.button key={offset} className={'video-card position' + offset} aria-label={offset ? 'Show video ' + (n + 1) : 'Play Business Lab video ' + (n + 1)} onClick={e => {
+          if (offset) setIndex(n);else {
+            trigger.current = e.currentTarget;
+            setPlaying(id);
+          }
+        }} animate={{
+          rotate: offset * 3,
+          scale: offset ? .88 : 1,
+          y: offset ? 15 : -18
+        }} transition={{
+          duration: reduced ? 0 : .65,
+          ease: [.22, 1, .36, 1]
+        }}><img key={id} src={'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'} alt={'Business Lab video ' + (n + 1)} loading="lazy" /><div className="video-overlay" /><span className="video-kicker">▶ THE BUSINESS LAB</span><span className="play"><FiPlay /></span><div className="video-label"><small>REAL OWNERS. REAL CONVERSATIONS.</small><b>Inside The Business Lab</b><span>Watch the moment <FiArrowUpRight /></span></div></motion.button>;
+      })}</div><div className="carousel-controls"><button aria-label="Previous video" onClick={() => setIndex(i => (i + 6) % 7)}><FiArrowLeft /></button><button aria-label="Next video" onClick={() => setIndex(i => (i + 1) % 7)}><FiArrowRight /></button></div><a className="button youtube-cta" href="https://www.youtube.com/@stoplosingleadshq">Watch more on YouTube <span className="button-arrow"><FiArrowUpRight /></span></a><p className="youtube-subscribe">Subscribe for more Business Lab moments.</p><small className="youtube-source">YouTube source placeholder · supplied clips shown until the live channel feed is connected.</small>{playing && <div className="modal video-dialog" role="dialog" aria-modal="true" aria-label="Business Lab video" onClick={() => setPlaying(null)}><button autoFocus className="close" aria-label="Close video" onClick={() => setPlaying(null)}><FiX /></button><iframe src={'https://www.youtube-nocookie.com/embed/' + playing + '?autoplay=1'} title="Business Lab video" allow="autoplay; encrypted-media; fullscreen" allowFullScreen onClick={e => e.stopPropagation()} /><a href={'https://www.youtube.com/shorts/' + playing}>Watch on YouTube ↗</a></div>}</section>;
 }

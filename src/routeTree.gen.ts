@@ -10,15 +10,20 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BookRouteImport } from './routes/book'
 import { Route as BusinessLabRouteImport } from './routes/business-lab'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as OurStoryRouteImport } from './routes/our-story'
 import { Route as QuizRouteImport } from './routes/quiz'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookRoute = BookRouteImport.update({
+  id: '/book',
+  path: '/book',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BusinessLabRoute = BusinessLabRouteImport.update({
@@ -29,11 +34,6 @@ const BusinessLabRoute = BusinessLabRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HowItWorksRoute = HowItWorksRouteImport.update({
-  id: '/how-it-works',
-  path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
 const OurStoryRoute = OurStoryRouteImport.update({
@@ -49,61 +49,50 @@ const QuizRoute = QuizRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/business-lab': typeof BusinessLabRoute
   '/contact': typeof ContactRoute
-  '/how-it-works': typeof HowItWorksRoute
   '/our-story': typeof OurStoryRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/business-lab': typeof BusinessLabRoute
   '/contact': typeof ContactRoute
-  '/how-it-works': typeof HowItWorksRoute
   '/our-story': typeof OurStoryRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/book': typeof BookRoute
   '/business-lab': typeof BusinessLabRoute
   '/contact': typeof ContactRoute
-  '/how-it-works': typeof HowItWorksRoute
   '/our-story': typeof OurStoryRoute
   '/quiz': typeof QuizRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/business-lab'
-    | '/contact'
-    | '/how-it-works'
-    | '/our-story'
-    | '/quiz'
+    '/' | '/book' | '/business-lab' | '/contact' | '/our-story' | '/quiz'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/business-lab'
-    | '/contact'
-    | '/how-it-works'
-    | '/our-story'
-    | '/quiz'
+  to: '/' | '/book' | '/business-lab' | '/contact' | '/our-story' | '/quiz'
   id:
     | '__root__'
     | '/'
+    | '/book'
     | '/business-lab'
     | '/contact'
-    | '/how-it-works'
     | '/our-story'
     | '/quiz'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BookRoute: typeof BookRoute
   BusinessLabRoute: typeof BusinessLabRoute
   ContactRoute: typeof ContactRoute
-  HowItWorksRoute: typeof HowItWorksRoute
   OurStoryRoute: typeof OurStoryRoute
   QuizRoute: typeof QuizRoute
 }
@@ -115,6 +104,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book': {
+      id: '/book'
+      path: '/book'
+      fullPath: '/book'
+      preLoaderRoute: typeof BookRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/business-lab': {
@@ -129,13 +125,6 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/how-it-works': {
-      id: '/how-it-works'
-      path: '/how-it-works'
-      fullPath: '/how-it-works'
-      preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/our-story': {
@@ -157,9 +146,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BookRoute: BookRoute,
   BusinessLabRoute: BusinessLabRoute,
   ContactRoute: ContactRoute,
-  HowItWorksRoute: HowItWorksRoute,
   OurStoryRoute: OurStoryRoute,
   QuizRoute: QuizRoute,
 }

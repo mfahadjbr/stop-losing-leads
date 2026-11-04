@@ -1,0 +1,190 @@
+You are building the new website for Stop Losing Leads HQ (SLLHQ). Build exactly what is described below. Do not add extra sections, extra pages, extra buttons or extra copy. Do not choose or mention any technology in your output to me, just deliver the finished site.
+
+=====================================
+GLOBAL RULES (apply to every page)
+=====================================
+1. The visitor is the hero. Our team is the guide. The leak is the villain.
+2. There is ONE primary call to action everywhere. Every main button says exactly: "Book My Lead Leak Diagnostic". All of them go to the same booking step.
+3. There is ONE second door: the 30 Second Lead Leak Quiz. It always ends by offering the same booking.
+4. NO prices, NO dollar amounts, NO tier cards, NO a la carte menu anywhere on the site. No sticky quiz bar. No audit form. No "view tier details".
+5. Copy style: no dashes in the copy, short paragraphs, fifth grade reading level, "we" for the company.
+6. NEVER invent testimonials, stats, client names, numbers or guarantees. Do not use "500+ leads recovered", "3x booking rate lift", "30 day improvement guarantee", or the old testimonials (Mike R., Dave K., Sarah T.). Remove all of them.
+7. Use real photos only (team, Carrollton, Business Lab). Until photos are supplied, use clearly labeled image placeholders. No stock photos, no illustrations of people.
+8. AI agents (Mav and River) get a simple icon, never a fake human face, and the card says plainly they are AI.
+9. Design feel: warm, human, trustworthy, clean, fast, mobile first. Large readable type, lots of white space, one accent color for buttons.
+10. The site must be fast, accessible and fully responsive.
+11. The old public tier pages must not exist (or must be unlisted and hidden from search engines). Prices must not be findable.
+
+=====================================
+SITE MAP (exactly these pages)
+=====================================
+1. Home
+2. Our Story (includes the Meet the Team section)
+3. Talk to Our Team (Contact)
+4. Lead Leak Quiz (with 3 result screens)
+5. Book Your Lead Leak Diagnostic (booking step that every main button leads to)
+
+Header navigation: Home, Our Story, Talk to Our Team, and a primary button "Book My Lead Leak Diagnostic".
+Footer: logo name, phone (940) 202 7945, email, Carrollton, TX, hours, links to Home, Our Story, Talk to Our Team, and the Quiz.
+
+=====================================
+PAGE 1: HOME (nine sections, in this order)
+=====================================
+
+SECTION 1. HERO
+- Headline: You already paid for the lead. Let's make sure somebody answers it.
+- Subhead: Most service businesses lose good leads to a missed call or a slow reply. We build and run the follow up system that answers every lead in seconds, so you book more jobs from the leads you already have.
+- Button: Book My Lead Leak Diagnostic
+- Second door as a small text link under the button: Not ready to talk? Take the 30 second Lead Leak Quiz.
+- Visual: a real photo of the team at work (Kevin, Marcie, Jordanna). Caption: "The team behind Stop Losing Leads HQ."
+
+SECTION 2. THE PROBLEM
+- Headline: You're not short on leads. You're losing the ones you have.
+- Four cards (keep the idea of the current site's four cards):
+  1. The phone rings and nobody picks up.
+  2. The web form sits overnight.
+  3. One reply, then silence.
+  4. Old contacts collect dust.
+  (Write one or two short plain sentences under each card title in the same voice.)
+- Closing line: You are on the job, doing the work you're great at. That is exactly when the phone rings. It's not a people problem. It's a system problem.
+
+SECTION 3. THE GUIDE
+- Headline: We know what it's like to be on a job when the phone rings.
+- Body paragraph 1: We're Kevin, Marcie and Jordanna, the co founders, with a great team behind us. We run our own businesses, and we lost leads the same way you do. So we built a system that answers every call, text and form in seconds and keeps following up until the person books or says no. It worked so well for us that we started building it for other owners. Our own team runs on two AI agents we built, Mav for strategy and River for getting the work done, so every system we install is one we use every day.
+- Body paragraph 2: We're not an ad agency, and we don't sell you more leads. We help you steward the ones you already paid for.
+- Link: Read our story (goes to Our Story page)
+- Under this section: a small strip with the faces of the three co founders (Kevin, Marcie, Jordanna) and a link "Meet the team" (goes to the Meet the Team section on the Our Story page).
+
+SECTION 4. THE PLAN
+- Headline: Here's how it works.
+- Three steps:
+  1. Talk with us. A free Lead Leak Diagnostic. We look at how leads reach you today and show you where they slip away. No pitch.
+  2. We build it for you. Instant replies, missed call text back, follow up, and a plan for your old contacts. You approve it, and we set up everything.
+  3. You book more jobs. Your leads get answered in seconds, day and night. You get back to the work.
+- Button: Book My Lead Leak Diagnostic
+
+SECTION 5. WHAT CHANGES (before and after table)
+- Two columns: "Without a system" and "With your system".
+  Row 1: A missed call goes to voicemail, then to your competitor | A missed call gets a text back in seconds
+  Row 2: A web form waits until tonight | A web form gets an answer before they close the tab
+  Row 3: One reply, then silence | Follow up keeps going until they book or say no
+  Row 4: Old contacts sit in a spreadsheet | Old contacts get a reason to come back
+  Row 5: You answer the phone between jobs | You do the job, and the system answers
+
+SECTION 6. PROOF (real people only)
+- Headline: Real owners. Real businesses. Solving real problems.
+- Content: two or three real client video or audio clips (the Faith Gladden audiogram goes first). Each shows first name, last initial, business type and city. Build it so the person's approved details can be filled in easily.
+- Do NOT add any number or stat.
+- If only one or two clips exist, show this line above them: "We're early, and we're building in the open. Here's what our first clients said."
+- Leave clearly marked placeholders for clients still waiting on written approval (Faith Gladden, Miri C., Abdul, Nathanael). Do not publish any of them as live until marked approved.
+
+SECTION 6b. BUSINESS LAB MOMENTS
+- Headline: Mic drop moments from The Business Lab.
+- A row of 3 vertical YouTube Shorts. Each loads as a thumbnail and only plays when clicked (so the page stays fast).
+- The row pulls the newest Shorts from our YouTube channel automatically so it never goes stale. Only show clips already approved for public posting.
+- Button: Watch more on YouTube (and ask them to subscribe).
+
+SECTION 7. THE STAKES
+- Headline: The goal is not more leads. The goal is to stop losing the ones you have.
+- Body: Every week without a system, leads you paid for call someone else, and years of past customers go cold. With one, you answer every lead, your calendar fills, and you get your evenings back.
+
+SECTION 8. FINAL CALL TO ACTION
+- Headline: Let's find your leak.
+- Body: Thirty minutes with our team. You'll leave knowing exactly where leads slip away in your business, even if you never work with us.
+- Button: Book My Lead Leak Diagnostic
+- Visual: the same founders photo, smaller.
+
+SECTION 9. FAQ (exactly five questions)
+- Do I need more leads first?
+- Do you replace my marketing?
+- Do I need to be tech savvy?
+- What if I already have a CRM?
+- What does it cost? Answer exactly: "Every business leaks in a different place, so we don't guess. On your diagnostic we'll show you what it would take to close your leak, what it costs, and whether you need us at all."
+(Write short, honest, plain answers for the first four in our voice. Agreement points to reflect: we never pitch on the first call, you own your data and your system, no tech skills needed, we tell you if you don't need us. No dollar amounts anywhere.)
+
+Also show a short "Business Lab" mention on the Home page (near the FAQ or the final call to action): The Business Lab is the community every client joins, and the room for owners who are not ready for done for you. Give it a soft link so visitors who won't book a call have somewhere to go.
+
+=====================================
+PAGE 2: OUR STORY
+=====================================
+- Headline: We built this for ourselves first.
+- Paragraph 1: We're Kevin and Marcie, husband and wife in Carrollton, Texas, and we've spent seventeen years as entrepreneurs. Today we run an ecommerce business, KMT Antiques, and The Business Lab, a community where owners build their systems together. In July 2026, Marcie walked away from thirty years in corporate, and now we're both all in.
+- Paragraph 2: Stop Losing Leads HQ started as our own fix. We needed follow up that actually worked, for our ecommerce business and for The Business Lab, so every person who reached out to us got an answer. We built it, it worked, and other owners started asking how. So now we build it for them too.
+- Paragraph 3: We don't do it alone. Our co founder Jordanna leads strategy and client relationships with Mav, our strategy agent. Kevin and Marcie lead the build and the coaching with River, our execution agent. And our team builds and tests every workflow behind the scenes.
+- Paragraph 4: Honestly, we're curious people. We're always digging into how follow up really works, what's changing, and what actually gets people to answer. Since we're digging that deep anyway, we pull back the curtain and share what we learn along the way.
+- Paragraph 5: Here's what we believe. You don't need another course. You need the follow up handled. And before you buy more leads, steward the ones you already have.
+- Paragraph 6: Jesus Christ is the center of how we run this business. For us that looks like honest numbers, real testimonials, and serving you before we ask for anything.
+- Paragraph 7: Our creed is simple. Always be growing, always be learning, always be helping others whenever we can.
+- Visuals: two or three real photos (Kevin and Marcie working, a Business Lab call, Carrollton). Use placeholders until supplied.
+
+MEET THE TEAM (section on the Our Story page, anchor link "Meet the team")
+Five cards, each with photo or icon, name, role, one line:
+1. Kevin | Co founder, systems architect | Designs every follow up system, and runs his own businesses on them.
+2. Marcie | Co founder, coaching and client success | Walked away from thirty years in corporate to help owners steward what they already have.
+3. Jordanna | Co founder, strategy and client relationships | Makes sure every system fits the business it's built for, and signs off before anything goes live.
+4. Mav (AI agent) | Strategy agent, works with Jordanna | Finds the leak, shapes the message, names the next move.
+5. River (AI agent) | Execution agent, works with Kevin and Marcie | Ships the work: content, scheduling, reporting and the numbers.
+- Mav and River use a simple icon (never a human face) and a visible label "AI agent".
+- Closing line under the cards: "And the team behind us, who make it all possible." (No names for the rest of the team.)
+
+YOUTUBE SHORTS ROW (on Our Story)
+- Headline: Mic drop moments from The Business Lab.
+- Subhead: Real owners, real conversations. Watch the moments that happen inside our sessions.
+- Show 3 to 6 of the latest Business Lab Shorts (thumbnail that plays on click, auto updated).
+- Button: Watch more on YouTube (and ask them to subscribe).
+
+END OF PAGE
+- Button: Book My Lead Leak Diagnostic
+
+=====================================
+PAGE 3: TALK TO OUR TEAM (Contact)
+=====================================
+- Headline: Talk to our team.
+- Body: You won't get a sales team. You'll get us. Tell us a little about your business and we'll set up a free Lead Leak Diagnostic.
+- What happens next (three short lines):
+  1. You send this form. We reply within one business day.
+  2. We meet for your diagnostic and look at how leads reach you today.
+  3. You leave with a clear picture of where leads slip away, and if it makes sense, the system that fits.
+- Form fields: Name, Phone, Email, Business name, Industry (dropdown), "Where do most of your leads come from?", "About how many new leads a month?", "What happens today when you miss a call?" (choices: Answer, Voicemail, Nothing).
+- Keep two SMS consent checkboxes under the form (clear, unchecked by default, with plain consent wording).
+- Industry dropdown options: Real estate, Coaching and consulting, Home services (plumbing, HVAC, electrical), Other. (Final list to be confirmed by the team.)
+- Short story block beside the form: one real photo plus these two sentences: "We're Kevin and Marcie, husband and wife in Carrollton, Texas, and we've spent seventeen years as entrepreneurs. Today we run an ecommerce business, KMT Antiques, and The Business Lab, a community where owners build their systems together."
+- Keep: phone (940) 202 7945, email, hours, Carrollton, TX.
+- Keep this line: "We respond fast. (Obviously.)"
+- After the form is sent, show a thank you message that repeats what happens next.
+
+=====================================
+PAGE 4: LEAD LEAK QUIZ (30 seconds)
+=====================================
+- Title: The 30 Second Lead Leak Quiz.
+- Short intro line: Answer a few quick questions and we'll name where your leads are slipping away.
+- 5 short multiple choice questions, one per screen, with a progress bar. Questions cover: how leads reach you (calls, forms, texts, referrals), how fast you usually reply, what happens when you miss a call, how many times you follow up with a lead who goes quiet, and what you do with old contacts.
+- The quiz ends in exactly one of three results. Each result names the leak, not a product, and has NO prices and NO tier names:
+  1. "Speed leak" (slow or missed replies). Short plain explanation of the leak.
+  2. "Follow up leak" (one touch, then silence). Short plain explanation.
+  3. "Database leak" (old contacts never worked). Short plain explanation.
+- Every result ends with the same line and button: "Book your diagnostic and we'll show you how to close it." Button: Book My Lead Leak Diagnostic.
+
+=====================================
+PAGE 5: BOOK YOUR LEAD LEAK DIAGNOSTIC
+=====================================
+- Headline: Book your Lead Leak Diagnostic.
+- Body: Thirty minutes with our team. We look at how leads reach you today and show you where they slip away. No pitch.
+- A booking calendar with a short form (name, phone, email, business name).
+- A short "what to expect" block: We never pitch on the first call. You own your data and your system. No tech skills needed. We tell you if you don't need us.
+- Confirmation message after booking.
+
+=====================================
+HOW THE DIAGNOSTIC FLOWS (for your understanding, do NOT show prices or tiers on the site)
+=====================================
+The diagnostic call maps their lead flow, then matches the leak to the fix. Pricing and plans are only shared privately after the call. Therefore the site must never show plan names, tiers or dollar amounts.
+
+=====================================
+DELIVERABLES AND ACCEPTANCE CHECK
+=====================================
+- All 5 pages built, linked and working on mobile and desktop.
+- Every main button reads exactly "Book My Lead Leak Diagnostic" and goes to the booking page.
+- Search the whole site for "$", "per month", "/mo", "tier", "Response Rescue", "Revenue Accelerator", "Revenue Protection Pro", "Mike R.", "Dave K.", "Sarah T.", "500+", "3x", "guarantee". None of these may appear.
+- No dashes in the visible copy.
+- Placeholders are clearly marked for: team photos, client clips awaiting approval, and YouTube Shorts source.
+- At the end, give me a short checklist of anything I still need to provide (photos, client approvals, booking details, YouTube channel link, industry list).

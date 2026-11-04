@@ -1,30 +1,17 @@
-# Stop Losing Leads HQ rebuild
+# Stop Losing Leads HQ
 
-Local review project using TanStack Start, React, TypeScript, Tailwind CSS, Framer Motion, GSAP and React Icons.
+Local preview: http://127.0.0.1:3000/
+Business Lab: http://127.0.0.1:3000/business-lab
 
-## Run
-npm install
-npm run dev
+Current six pages: Home, Our Story, Business Lab, Talk to Our Team, Lead Leak Quiz, Book Your Lead Leak Diagnostic.
 
-Open http://127.0.0.1:3000
+The latest direct user request supersedes the prior five-page map by adding Business Lab. See brief-audit.md for current verified behavior and pending integrations. Historical changes are in progress.md.
 
-## Validation
-npm run build
-npm run check
+Run: npm install then npm run dev.
+Checks: python scripts/verify_acceptance.py, npm run check, npm run build.
 
-## Routes
-Home /, How it works /how-it-works, Our story /our-story, Business Lab /business-lab, Lead Leak Quiz /quiz, Talk to our team /contact.
+Images generated/edited on November 5 are in public/assets/business-lab-workspace-v1.png and public/assets/team-conversation-edited-v1.png. Exact prompts and provenance: nov5-image-prompts.md. Website captions identify generated/edited imagery. Individual face/name identities were not guessed.
 
-## Client inputs before production
-- Approved testimonial photos, quotes, names, business/city and permission to publish. Owner videos are Business Lab content, not client proof.
-- Founder group photo and individual photos with confirmed identities. Initials are used on founder cards until photos are provided.
-- Confirm founder biographies and role descriptions from the supplied brief.
-- Confirm diagnostic duration (the references differ between 15 and 30 minutes).
-- Production form endpoint or CRM connection and exact approved SMS consent wording. Current form transparently prepares an email draft and requires the visitor to send it.
-- Existing legal policy links are retained on the original domain pending approved replacement text.
-- Videos use the seven supplied IDs. Automated newest-Shorts retrieval requires a channel feed/API integration; it is not represented as active.
+Booking is static at the user's request. Forms prepare email drafts and do not claim an appointment or message was confirmed. A future public HTTPS booking URL can use VITE_BOOKING_URL, without credentials.
 
-The supplied images are retained in assets/ and copied to public/assets/. Hero is an original UI composition with supplied brand artwork, not a claimed founders photograph. No public pricing, invented statistics, reviews or guarantees.
-
-## Design refinement
-The current review uses a centered rounded navbar, contained photographic hero and CTA, rounded panels and curved process timeline. Generated visual prompts and provenance are recorded in image-prompts.md. Nunito Sans and Plus Jakarta Sans are locally hosted. Sofia Pro is not included because no licensed font file was supplied.
+Real client clips require approval plus complete details. Supplied YouTube clips remain fixed until a live channel feed is connected. These limits are labeled in the interface.
